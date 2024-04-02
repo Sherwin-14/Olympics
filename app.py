@@ -241,7 +241,7 @@ if user_menu=='Sport Wise Analysis':
     sports = sports_regions_df['Sport'].unique().tolist()
     sports.insert(0, 'Overall')
 
-    st.title("Regions Participation wrt to Sports")
+    st.title("Countries Participation All Time Participation wrt to Sports")
 
     # Create a dropdown for the sports
     sport = st.selectbox('Select a Sport', sports)
