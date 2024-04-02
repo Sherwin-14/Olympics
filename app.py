@@ -11,8 +11,8 @@ import matplotlib.animation as animation
 
 st.set_page_config(layout="wide")
 
-df=pd.read_csv('C:/Users/Asus/Desktop/archive/athlete_events.csv')
-region_df=pd.read_csv('C:/Users/Asus/Desktop/archive/noc_regions.csv')
+df=pd.read_csv('dataset/athlete_events.csv')
+region_df=pd.read_csv('dataset/noc_regions.csv')
 
 df=preprocessor.preprocess(df,region_df)
 
