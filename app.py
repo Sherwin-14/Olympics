@@ -241,7 +241,7 @@ if user_menu=='Sport Wise Analysis':
     sports = sports_regions_df['Sport'].unique().tolist()
     sports.insert(0, 'Overall')
 
-    st.title("Regions Participation wrt to Sports")
+    st.title("Countries Participation All Time wrt to Sports")
 
     # Create a dropdown for the sports
     sport = st.selectbox('Select a Sport', sports)
@@ -260,7 +260,7 @@ if user_menu=='Sport Wise Analysis':
         df_sport = sports_regions_df[sports_regions_df['Sport'] == sport]
         st.table(df_sport)
     
-    st.title("Top 10 Sports with Highest All Time Particpation")
+    st.title("Top 10 Sports in terms of Particpation (All Time)")
     top_10=helper.sports_atheltes_analysis(df)
     fig, ax = plt.subplots(figsize=(10, 5))
     ax.barh(top_10['Sport'], top_10['Number of Athletes'], color=plt.cm.magma(np.linspace(0, 1, len(top_10))))
